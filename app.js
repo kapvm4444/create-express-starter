@@ -1,4 +1,3 @@
-const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
@@ -16,7 +15,7 @@ const globalErrorHandler = require('./controllers/errorController');
 
 const app = express();
 
-console.log(process.env.NODE_ENV, 'from app.js');
+console.log(process.env.NODE_ENV, 'mode from app.js');
 
 app.use(
   cors({
@@ -26,9 +25,6 @@ app.use(
 );
 
 app.enable('trust proxy');
-
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
 
 //Using the "express.static()" middleware for accessing the static file in the file system (server)
 //serving static files
