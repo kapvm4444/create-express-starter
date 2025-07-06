@@ -25,7 +25,7 @@ There are two ways to use this starter:
 
 #### Method 1: Use NPX (Recommended)
 ```bash
-npx create-express-app
+npx @kapvm/create-express-app <your-app-name>
 ```
 
 #### Method 2: Clone the GitHub Repo
@@ -33,6 +33,7 @@ npx create-express-app
 git clone https://github.com/kapvm4444/create-express-starter.git
 cd create-express-starter
 npm install
+npm start
 ```
 
 ### 2. Configuration Steps 🛠️
